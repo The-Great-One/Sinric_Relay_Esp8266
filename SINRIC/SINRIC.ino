@@ -13,9 +13,9 @@ ESP8266WiFiMulti WiFiMulti;
 WebSocketsClient webSocket;
 WiFiClient client;
 
-#define MyApiKey "4328a85e-2d89-459a-a4c9-1985c6fa31d0" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
-#define MySSID "2ndFLOOR" // TODO: Change to your Wifi network SSID
-#define MyWifiPassword "books4ume" // TODO: Change to your Wifi network password
+#define MyApiKey "****" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
+#define MySSID "****" // TODO: Change to your Wifi network SSID
+#define MyWifiPassword "****" // TODO: Change to your Wifi network password
 #define MYPIN1 D4
 #define MYPIN2 D5
 #define HEARTBEAT_INTERVAL 300000 // 5 Minutes 
