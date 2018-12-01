@@ -29,13 +29,13 @@ void setTargetTemperatureOnServer(String deviceId, String value, String scale);
 // deviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here
 
 void turnOn(String deviceId) {
-  if (deviceId == "5afae1948af4107cd04addbe") // Device ID of first device
+  if (deviceId == ".........") // Device ID of first device
   {  
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     pinMode(MYPIN1, HIGH);
   } 
-  else if (deviceId == "5afae1b48af4107cd04addbf") // Device ID of second device
+  else if (deviceId == ".........") // Device ID of second device
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -49,13 +49,13 @@ void turnOn(String deviceId) {
 }
 
 void turnOff(String deviceId) {
-   if (deviceId == "5afae1948af4107cd04addbe") // Device ID of first device
+   if (deviceId == ".........") // Device ID of first device
    {  
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      pinMode(MYPIN1, LOW);
    }
-   else if (deviceId == "5afae1b48af4107cd04addbf") // Device ID of second device
+   else if (deviceId == ".........") // Device ID of second device
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
