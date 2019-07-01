@@ -83,14 +83,14 @@ void turnOff(String deviceId) {
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
-     pinMode(MYPIN2, LOW);
+     pinMode(MYPIN3, LOW);
 
   }
  else if (deviceId == ".........") // Device ID of fourth device
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
-     pinMode(MYPIN2, LOW);
+     pinMode(MYPIN4, LOW);
 
   }
   else {
