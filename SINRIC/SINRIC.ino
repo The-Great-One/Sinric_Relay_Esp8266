@@ -16,8 +16,11 @@ WiFiClient client;
 #define MyApiKey "****" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
 #define MySSID "****" // TODO: Change to your Wifi network SSID
 #define MyWifiPassword "****" // TODO: Change to your Wifi network password
-#define MYPIN1 D4
-#define MYPIN2 D5
+#define MYPIN1 14 //D5
+#define MYPIN2 2 //D4
+#define MYPIN3 3 //RX
+#define MYPIN4 4  //D2
+
 #define HEARTBEAT_INTERVAL 300000 // 5 Minutes 
 
 uint64_t heartbeatTimestamp = 0;
@@ -42,6 +45,20 @@ void turnOn(String deviceId) {
     pinMode(MYPIN2, HIGH);
 
   }
+ else if (deviceId == ".........") // Device ID of third device
+  { 
+    Serial.print("Turn on device id: ");
+    Serial.println(deviceId);
+    pinMode(MYPIN3, HIGH);
+
+  }
+ else if (deviceId == ".........") // Device ID of fourth device
+  { 
+    Serial.print("Turn on device id: ");
+    Serial.println(deviceId);
+    pinMode(MYPIN4, HIGH);
+
+  }
   else {
     Serial.print("Turn on for unknown device id: ");
     Serial.println(deviceId);    
@@ -56,6 +73,20 @@ void turnOff(String deviceId) {
      pinMode(MYPIN1, LOW);
    }
    else if (deviceId == ".........") // Device ID of second device
+   { 
+     Serial.print("Turn off Device ID: ");
+     Serial.println(deviceId);
+     pinMode(MYPIN2, LOW);
+
+  }
+ else if (deviceId == ".........") // Device ID of third device
+   { 
+     Serial.print("Turn off Device ID: ");
+     Serial.println(deviceId);
+     pinMode(MYPIN2, LOW);
+
+  }
+ else if (deviceId == ".........") // Device ID of fourth device
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
